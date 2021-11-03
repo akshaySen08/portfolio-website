@@ -22,9 +22,29 @@
   <link href="aos_2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+  <script>
+    document.onkeydown = function (e) {
+      if (event.keyCode == 123) {
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+        return false;
+      }
+      if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+        return false;
+      }
+    }
+  </script>
 </head>
 
-<body>
+<body oncontextmenu="return false">
   <!-- ======= Header ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
   <header id="header">
@@ -33,11 +53,10 @@
         <img src="assets/img/profile.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Akshay Sen</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://twitter.com/AkshaySen75" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.facebook.com/akshay.sen.750" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/the_baba_yega_1010/" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/akshay-sen-1257a7138" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
       </div>
       <nav class="nav-menu">
@@ -65,7 +84,8 @@
       <h1>Akshay Sen</h1>
       <p>
         I'm
-        <span class="typewrite" data-period="2000" data-type='["Developer ", "Student ", "Explorer ", "Enthusiast ", "Extrovert "]'>
+        <span class="typewrite" data-period="2000"
+          data-type='["Developer ", "Student ", "Explorer ", "Enthusiast ", "Extrovert "]'>
           <span class="wrap"></span>
         </span>
       </p>
@@ -98,15 +118,12 @@
             <p></p>
           </div>
           <div class="resume-item" data-aos="fade-right">
-            <h4>Senior School Certificate Examination </h4>
-            <h5>2010 - 2014 (dummy)</h5>
-            <p><em>I.L.V.A Higher Secondary School, Indore</em></p>
-            <p>Here We will put some wonderfull expreience of Akshay in his Senior School Life. Lorem ipsum dolor sit
-              amet, consectetur adipisicing elit. Aspernatur consequatur odit suscipit cupiditate quos eos consequuntur,
-              nisi laboriosam consectetur ipsa architecto facilis iusto molestias deserunt minima sapiente, quae aut
-              eaque?</p>
+            <h4>Masters in Computer Science </h4>
+            <h5>2021 - Current </h5>
+            <p><em>Pace University, New York, USA</em></p>
+            <p></p>
           </div>
-          <div class="resume-item" data-aos="fade-right">
+          <!-- <div class="resume-item" data-aos="fade-right">
             <h4>Secondary School Examination</h4>
             <h5>2010 - 2014(dummy)</h5>
             <p><em>I.L.V.A Higher Secondary School, Indore</em></p>
@@ -114,7 +131,7 @@
               consectetur adipisicing elit. Eius voluptatem iusto quibusdam ea voluptatibus saepe alias, laboriosam
               molestiae natus at necessitatibus animi incidunt ratione commodi? Doloribus odit officiis doloremque
               corporis!</p>
-          </div>
+          </div> -->
         </div>
         <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                   <h3 class="resume-title">Professional Experience</h3>
